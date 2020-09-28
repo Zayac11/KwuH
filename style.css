@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+/*Анимации*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.header_content {
+    height: 100px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+}
+
+/* .header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-name: show_header;
+    animation-duration: 1s;
+    z-index: 1;
+} */
+/* @keyframes show_header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+} */
+
+
+.anim-show {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease; 
+}
+.anim-show.active,
+.active .anim-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.works.active,
+.active .works {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.form.active,
+.active .form {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+.container {
+    padding-top: 100px;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+/*Header*/
+
+.top {
+    display: flex;
+    align-items: center;
+}
+/* .logo {
+
+} */
+.title {
+    margin-left: 10px;
+}
+.mainTitle {
+    color: #424040;
+    font-size: 24px;
+    font-weight: 500;
+}
+.subTitle {
+    font-weight: 500;
+    color: #7E7E7E;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 28%;
+}
+.nav_item {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #7E7E7E;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+.nav_item:hover {
+    color: #372166;
+}
+.nav_item_active {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #372166;
+    transition: all 0.2s ease;
+}
+
+/*Home*/
+
+.content_title {
+    position: relative;
+    z-index: 1;
+    color: #151812;
+    margin: 50px auto 0;
+    width: 50%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    
+}
+.works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    transform: translate(0px, 80%);
+    opacity: 0;
+    transition: all 0.8s ease 0.5s; 
+}
+
+.home_back {
+    position: absolute;
+    z-index: -12;
+    top: -200px;
+    left: 0px;
+}
+.home_back img{
+   /* width: 1000px; */
+}
+.home_image_container {
+    position: relative;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+.home_image_container img {
+   display: block;
+}
+.home_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    background-color: #363636;
+    opacity: 0.3;
+}
+.center_item {
+    width: 40%;
+    position: relative;
+}
+.aside_item {
+    width: 25%;
+    text-align: center;
+} 
+.center_item_title {
+    text-align: center;
+    width: 100%;
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    bottom: 15%;
+}
+.aside_item_title {
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+}
+
+.aside_item_text {
+    margin-top: 15px;
+    text-align: center;
+    color: #686464;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/*Our team*/
+
+.team_title {
+    font-weight: 500;
+    font-size: 72px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.team_subtitle {
+    font-weight: 500;
+    font-size: 36px;
+    color: #807E84;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+.form {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 5%;
+    transform: translate(0px, 80%);
+    opacity: 0;
+    transition: all 0.8s ease 0.8s; 
+}
+.name {
+    font-weight: 500;
+    font-size: 64px;
+    color: #424244;
+}
+
+.position {
+    color: #807E84;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+
+.skills li {
+    display: flex;
+    align-items: center;
+}
+
+.skills li span {
+    margin: 5px 15px;
+    color: #807E84;
+    font-weight: 500;
+    font-size: 32px;
+}
+.avatar {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.profile:nth-child(2n) .form{
+    order: 1;
+}
+
+/*About*/
+
+.about {
+    width: 100%;
+}
+
+.about_title {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 64px;
+    color: #3d3d3d;
+}
+
+.slider {
+    margin: 30px 0;
+    width: 100%;
+    height: 650px;
+    background-color: #f8f8f8;
+}
+.about_footer {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    color: #807E84;
+}
+
+.about_footer span {
+    color: #524F58;
+}
+/*Slider*/
+
+.sim-slider-element img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sim-slider {
+    max-width: 1000px;
+    min-width: 320px;
+    max-height: 800px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border: 1px solid #ccd;
+    background-color: white;
+  }
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
