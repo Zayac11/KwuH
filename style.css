@@ -9,6 +9,9 @@
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
 
 /*Анимации*/
 .header {
@@ -107,7 +110,6 @@ ul {
 .nav_item {
     font-size: 20px;
     font-weight: 500;
-    text-decoration: none;
     color: #7E7E7E;
     transition: all 0.2s ease;
     text-transform: uppercase;
@@ -130,7 +132,7 @@ ul {
     z-index: 1;
     color: #151812;
     margin: 30px auto 0;
-    width: 50%;
+    width: 100%;
     text-align: center;
     font-size: 48px;
     font-weight: 400;
@@ -260,6 +262,7 @@ ul {
 .name {
     font-weight: 500;
     font-size: 56px;
+    margin-bottom: 10px;
     color: #424244;
 }
 
@@ -303,6 +306,7 @@ ul {
 }
 
 .about_title {
+    font-family: 'Roboto Mono', monospace;
     padding-top: 20px;
     text-align: center;
     font-weight: 500;
@@ -321,6 +325,7 @@ ul {
     font-weight: 500;
     font-size: 36px;
     color: #807E84;
+    padding-bottom: 30px;
 }
 
 .about_footer span {
@@ -416,6 +421,78 @@ span.sim-dot {
     cursor: pointer;
 }
 
+/*Contacts*/
+
+.footer {
+    background-color: #f8f8f8;
+}
+.footer_container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.contacts {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #807E84;
+    align-items: center;
+    padding: 60px;
+}
+.social {
+    width: 20%;
+}
+.footer_title {
+    color: #424040;
+    font-weight: 500;
+    font-size: 24px;
+}
+.footer_subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: #807E84;
+    margin: 10px 0 25px;
+}
+.footer_networks {
+    display: flex;
+    align-items: center;
+}
+.footer_networks a:nth-child(2){
+    padding: 10px;
+}
+.footer_networks img{
+    display: block;
+}
+.company {
+   
+}
+.company li a{
+    line-height: 2;
+    font-size: 14px;
+    color: #807E84;
+}
+.company li:first-child a{
+    color: #4D4C50;
+    font-size: 18px;
+    font-weight: 500;
+}
+.bottom {
+    width: 1600px;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.rights {
+    font-family: 'Roboto Mono', monospace;
+    color: #807E84;
+    width: 20%;
+    font-size: 14px;
+}
+.made {
+    font-family: 'Roboto Mono', monospace;
+    color: #807E84;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
 /*
 @media (min-width: 1200px) and (max-width: 1599px) 
 @media (min-width: 992px) and (max-width: 1199px) 
@@ -433,7 +510,7 @@ span.sim-dot {
         width: 40%;
     }
     .home_back {
-        top: 250px;
+        top: 300px;
     }
     .home_back img{
         width: 1200px;
@@ -444,6 +521,15 @@ span.sim-dot {
     }
     .aside_item {
         margin: 0 20px;
+    }
+    .footer_container {
+        width: 1200px;
+    }
+    .bottom {
+        width: 1200px;
+    }
+    .social {
+        width: 30%;
     }
 }
 
@@ -496,6 +582,7 @@ span.sim-dot {
     }
     .name {
         font-size: 40px;
+        
     }
     .position {
         font-size: 20px;
@@ -517,6 +604,22 @@ span.sim-dot {
     }
     .about_footer {
         font-size: 26px;
+    }
+    .footer_container {
+        width: 992px;
+    }
+    .bottom {
+        width: 992px;
+    }
+    .social {
+        width: 30%;
+    }
+    .rights {
+        font-size: 12px;
+        width: 30%;
+    }
+    .made {
+        font-size: 12px;    
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -597,6 +700,26 @@ span.sim-dot {
     }
     .about_footer {
         font-size: 26px;
+    }
+    .footer_container {
+        width: 768px;
+    }
+    .bottom {
+        width: 768px;
+        padding: 30px;
+    }
+    .contacts {
+        padding: 30px;
+    }
+    .social {
+        width: 35%;
+    }
+    .rights {
+        font-size: 10px;
+        width: 30%;
+    }
+    .made {
+        font-size: 10px;    
     }
 }
 
@@ -693,6 +816,35 @@ span.sim-dot {
     }
     .about_footer {
         font-size: 26px;
+    }
+    .footer_container {
+        width: 650px;
+    }
+    .footer_subtitle {
+        margin: 10px 0 15px;
+    }
+    .bottom {
+        width: 650px;
+        padding: 30px;
+    }
+    .company li {
+        line-height: 1.8;
+    }
+    .contacts {
+        padding: 30px;
+    }
+    .social {
+        width: 35%;
+    }
+    .footer_networks a img {
+        width: 30px;
+    }
+    .rights {
+        font-size: 10px;
+        width: 30%;
+    }
+    .made {
+        font-size: 10px;    
     }
 }
 
@@ -804,7 +956,41 @@ span.sim-dot {
     .about_footer {
         font-size: 26px;
     }
+    .footer_container {
+        width: 481px;
+    }
+    .footer_subtitle {
+        margin: 10px 0 15px;
+    }
+    .bottom {
+        width: 481px;
+        padding: 20px 10px;
+    }
+    .company li {
+        line-height: 1.8;
+    }
+    .contacts {
+        padding: 20px 10px;
+    }
+    .social {
+        width: 50%;
+    }
+    .footer_networks a img {
+        width: 30px;
+    }
+    .rights {
+        font-size: 10px;
+        width: 30%;
+        width: max-content;
+    }
+    .rights:last-child {
+        display: none;
+    }
+    .made {
+        font-size: 10px;    
+    }
 }
+
 @media (max-width: 480px) {
     .header_content {
         height: 100px;
@@ -830,7 +1016,7 @@ span.sim-dot {
     }  
     .content_title {
         width: 80%;
-        font-size: 30px;
+        font-size: 20px;
     }  
     .works {
         margin-top: 30px;
@@ -902,8 +1088,12 @@ span.sim-dot {
     .about_title {
         font-size: 36px;
     }
+    .about {
+        padding: 30px;
+    }
     .sim-slider {
-        margin: 0 auto 20px;
+        max-width: 480px;
+        margin: 0;
         height: 280px;
         border: none;
     }
@@ -912,5 +1102,41 @@ span.sim-dot {
     }
     .about_footer {
         font-size: 26px;
+    }
+    .footer {
+        width: max-content;
+    }
+    .footer_container {
+        max-width: 480px;
+    }
+    .footer_subtitle {
+        margin: 10px 0 15px;
+    }
+    .bottom {
+        max-width: 480px;
+        padding: 20px 10px;
+    }
+    .company li {
+        line-height: 1.8;
+    }
+    .contacts {
+        padding: 20px 10px;
+    }
+    .social {
+        width: 50%;
+    }
+    .footer_networks a img {
+        width: 30px;
+    }
+    .rights {
+        font-size: 10px;
+        width: 30%;
+        width: max-content;
+    }
+    .rights:last-child {
+        display: none;
+    }
+    .made {
+        font-size: 10px;    
     }
 }
