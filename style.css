@@ -127,9 +127,9 @@ a {
 
 /*Home*/
 
-.home {
-    height: 100vh;
-}
+/* .home {
+   
+} */
 
 .content_title {
     position: relative;
@@ -138,13 +138,14 @@ a {
     margin: 30px auto 0;
     width: 95%;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 400;
     
 }
 .works {
     position: relative;
-    margin-top: 50px;
+    margin: 50px 0 0;
+    padding-bottom: 50px;
 }
 .home_back_container {
     position: absolute;
@@ -163,7 +164,7 @@ a {
    width: 1600px;
 }
 .home_image_container {
-    border-radius: 15px;
+    border-radius: 10px;
     position: relative;
     margin: auto;
     width: max-content;
@@ -175,17 +176,17 @@ a {
 }
 
 .aside_item .home_image_container img {
-    width: 300px;
+    width: 250px;
 }
 .center_item .home_image_container img {
-    width: 500px;
+    width: 400px;
 }
 
 .home_cover {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     top: 0;
     left: 0;
     background-color: #363636;
@@ -465,9 +466,9 @@ span.sim-dot {
 .footer_networks img{
     display: block;
 }
-.company {
+/* .company {
    
-}
+} */
 .company li a{
     line-height: 2;
     font-size: 14px;
@@ -487,13 +488,12 @@ span.sim-dot {
 .rights {
     font-family: 'Roboto Mono', monospace;
     color: #807E84;
-    width: 20%;
     font-size: 14px;
 }
 .made {
     font-family: 'Roboto Mono', monospace;
     color: #807E84;
-    margin: 0 auto;
+    margin: 0;
     font-size: 14px;
 }
 
@@ -514,7 +514,7 @@ span.sim-dot {
         width: 40%;
     }
     .home_back {
-        top: 300px;
+        top: 200px;
     }
     .home_back img{
         width: 1200px;
@@ -744,7 +744,7 @@ span.sim-dot {
         font-size: 15px;
     }  
     .content_title {
-        width: 80%;
+        width: 90%;
         font-size: 30px;
     }  
     .works {
@@ -845,7 +845,6 @@ span.sim-dot {
     }
     .rights {
         font-size: 10px;
-        width: 30%;
     }
     .made {
         font-size: 10px;    
@@ -876,11 +875,12 @@ span.sim-dot {
         font-size: 15px;
     }  
     .content_title {
-        width: 80%;
-        font-size: 30px;
+        width: 90%;
+        font-size: 20px;
     }  
     .works {
         margin-top: 30px;
+        padding-bottom: 20px;
     }
     .items_container {
         flex-direction: column;
