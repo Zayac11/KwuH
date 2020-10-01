@@ -212,14 +212,14 @@ a {
 .center_item_title {
     text-align: center;
     width: 100%;
-    font-size: 48px;
+    font-size: 40px;
     color: #fff;
     position: absolute;
     bottom: 15%;
 }
 .aside_item_title {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     color: #fff;
     position: absolute;
     bottom: 10%;
@@ -762,6 +762,9 @@ span.sim-dot {
     .center_item {
         width: 70%;
         margin: 20px auto;
+    }
+    .center_item_title {
+        bottom: 10%;
     }
     .aside_item {
         width: 70%;
