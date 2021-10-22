@@ -265,7 +265,7 @@ a {
 }
 .aside_item_title {
     text-align: center;
-    font-size: 40px;
+    font-size: 33px;
     color: #fff;
     position: absolute;
     bottom: 3%;
@@ -595,6 +595,10 @@ span.sim-dot {
     /* border-radius: 12px; */
 }
 
+.slider_item {
+    width: 100%;
+}
+
 .about_submit {
     display: block;
     margin: 25px auto 0;
@@ -608,6 +612,17 @@ span.sim-dot {
 
 .about_submit:hover {
     background-color: #ccc;
+}
+
+.about_services {
+    list-style: circle;
+    margin: 20px 0;
+}
+
+.about_service_item {
+    margin: 0 auto;
+    width: 52%;
+    font-size: 24px;
 }
 
 @media (min-width: 1800px) and (max-width: 2048px)  {
