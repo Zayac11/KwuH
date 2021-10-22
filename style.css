@@ -584,7 +584,7 @@ span.sim-dot {
     text-align: center;
 }
 
-.input {
+.about_input {
     display: block;
     margin: 0 auto 15px;
     padding: 10px 20px;
@@ -595,7 +595,7 @@ span.sim-dot {
     /* border-radius: 12px; */
 }
 
-.submit {
+.about_submit {
     display: block;
     margin: 25px auto 0;
     padding: 10px 20px;
@@ -606,7 +606,7 @@ span.sim-dot {
     transition: all 0.4s ease;
 }
 
-.submit:hover {
+.about_submit:hover {
     background-color: #ccc;
 }
 
