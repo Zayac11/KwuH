@@ -147,7 +147,6 @@ a {
     -webkit-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    text-transform: uppercase;
 }
 .nav_item:hover {
     color: #372166;
@@ -262,14 +261,14 @@ a {
     font-size: 40px;
     color: #fff;
     position: absolute;
-    bottom: 15%;
+    bottom: 3%;
 }
 .aside_item_title {
     text-align: center;
     font-size: 40px;
     color: #fff;
     position: absolute;
-    bottom: 10%;
+    bottom: 3%;
 }
 
 .aside_item_text {
@@ -580,6 +579,36 @@ span.sim-dot {
 @media (min-width: 481px) and (max-width: 649px)
 @media (max-width: 480px)
 */
+
+.main__title {
+    text-align: center;
+}
+
+.input {
+    display: block;
+    margin: 0 auto 15px;
+    padding: 10px 20px;
+    width: 400px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    /* border-radius: 12px; */
+}
+
+.submit {
+    display: block;
+    margin: 25px auto 0;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.submit:hover {
+    background-color: #ccc;
+}
 
 @media (min-width: 1800px) and (max-width: 2048px)  {
     .home {
